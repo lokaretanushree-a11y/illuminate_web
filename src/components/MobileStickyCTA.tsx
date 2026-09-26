@@ -37,13 +37,15 @@ export const MobileStickyCTA: React.FC<MobileStickyCTAProps> = ({ onOpenRegister
           </div>
         </div>
 
-        <button
-          onClick={onOpenRegister}
+        <a
+          href="https://forms.gle/XJMwB8mSd4GzBn9G7"
+          target="_blank"
+          rel="noopener noreferrer"
           className="min-h-[44px] px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase text-black bg-gradient-to-r from-amber-400 to-yellow-500 active:scale-[0.98] transition-transform gold-glow-sm flex items-center gap-1.5 shrink-0"
         >
           <span>REGISTER NOW</span>
           <ArrowRight className="w-3.5 h-3.5" />
-        </button>
+        </a>
       </div>
     </aside>
   );

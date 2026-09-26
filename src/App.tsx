@@ -30,7 +30,8 @@ export default function App() {
       if (window.location.hash === '#aurora') {
         setCurrentView('aurora');
       } else if (window.location.hash === '#modal' || window.location.hash === '#register-modal') {
-        setIsModalOpen(true);
+        window.open('https://forms.gle/XJMwB8mSd4GzBn9G7', '_blank', 'noopener,noreferrer');
+        window.location.hash = '';
       } else {
         setCurrentView('website');
       }
@@ -41,9 +42,9 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-  // Every registration CTA across the website opens this modal
+  // Registration handler opens Google Form in a new tab safely
   const handleOpenRegistration = () => {
-    setIsModalOpen(true);
+    window.open('https://forms.gle/XJMwB8mSd4GzBn9G7', '_blank', 'noopener,noreferrer');
   };
 
   const handleCloseModal = () => {
@@ -115,7 +116,10 @@ export default function App() {
 
       {/* Floating Register Button with pulsing gold glow and hover expansion */}
       <aside aria-label="Quick Registration" className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40">
-        <motion.button
+        <motion.a
+          href="https://forms.gle/XJMwB8mSd4GzBn9G7"
+          target="_blank"
+          rel="noopener noreferrer"
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.98 }}
           animate={{
@@ -128,14 +132,13 @@ export default function App() {
           transition={{
             boxShadow: { duration: 3.5, repeat: Infinity, ease: 'easeInOut' },
           }}
-          onClick={handleOpenRegistration}
-          aria-label="Register for Illuminate Workshop for ₹349"
+          aria-label="Register for Illuminate Workshop for ₹700"
           className="group px-4 sm:px-6 py-3 sm:py-3.5 rounded-full bg-[#FFD21C] hover:bg-[#ffe066] text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider flex items-center gap-2 sm:gap-2.5 transition-all duration-300 cursor-pointer"
         >
           <Sparkles className="w-3.5 h-3.5 text-black" />
-          <span>REGISTER NOW — ₹349</span>
+          <span>REGISTER NOW — ₹700</span>
           <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-300 group-hover:translate-x-1.5" />
-        </motion.button>
+        </motion.a>
       </aside>
 
       {/* Polished Glassmorphism Event Registration Modal */}

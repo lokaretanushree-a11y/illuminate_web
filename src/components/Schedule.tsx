@@ -108,7 +108,7 @@ export const Schedule: React.FC = () => {
           </h2>
 
           <p className="text-[#C5B8D8] text-xs sm:text-sm max-w-md mx-auto uppercase tracking-[0.18em] font-medium mt-3">
-            A 7-hour high-intensity progression from raw ideation to pitch execution.
+            A 4–5 hour high-intensity progression from raw ideation to pitch execution.
           </p>
         </div>
 

@@ -34,7 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
   const handleLinkClick = (href: string, label: string) => {
     setMobileMenuOpen(false);
     if (label === 'Register') {
-      onOpenRegister();
+      window.open('https://forms.gle/XJMwB8mSd4GzBn9G7', '_blank', 'noopener,noreferrer');
       return;
     }
     const element = document.querySelector(href);
@@ -84,12 +84,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
 
             {/* Right: REGISTER NOW */}
             <div className="hidden sm:flex items-center">
-              <button
-                onClick={onOpenRegister}
-                className="px-5 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider text-black bg-[#F5C518] hover:bg-[#ffcf24] transition-all duration-200 cursor-pointer shadow-[0_0_15px_rgba(245,197,24,0.3)] hover:scale-105 active:scale-95"
+              <a
+                href="https://forms.gle/XJMwB8mSd4GzBn9G7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider text-black bg-[#F5C518] hover:bg-[#ffcf24] transition-all duration-200 cursor-pointer shadow-[0_0_15px_rgba(245,197,24,0.3)] hover:scale-105 active:scale-95 inline-flex items-center justify-center"
               >
                 REGISTER NOW
-              </button>
+              </a>
             </div>
 
             {/* Mobile Hamburger Button */}
@@ -123,16 +125,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
               </div>
 
               <div className="pt-2 px-1">
-                <button
-                  onClick={() => {
-                    setMobileMenuOpen(false);
-                    onOpenRegister();
-                  }}
-                  className="w-full py-2.5 rounded-full text-xs font-bold tracking-wider uppercase text-black bg-[#F5C518] hover:bg-[#ffcf24] flex items-center justify-center gap-2"
+                <a
+                  href="https://forms.gle/XJMwB8mSd4GzBn9G7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="w-full py-2.5 rounded-full text-xs font-bold tracking-wider uppercase text-black bg-[#F5C518] hover:bg-[#ffcf24] flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  <span>REGISTER NOW — ₹349</span>
+                  <span>REGISTER NOW — ₹700</span>
                   <ArrowRight className="w-3.5 h-3.5" />
-                </button>
+                </a>
               </div>
             </motion.div>
           )}

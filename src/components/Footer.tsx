@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, ArrowUp } from 'lucide-react';
+import { Instagram, ArrowUp, Linkedin } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
               illuminate
             </div>
             <p className="text-xs uppercase tracking-[0.2em] text-white/70 mt-2 font-medium">
-              E-CELL IIT BOMBAY × E-CELL CRCE
+              E-CELL IIT BOMBAY × E-CELL LTCE
             </p>
             <p className="text-sm text-[#C5B8D8]/80 mt-4 max-w-sm leading-relaxed">
               Empowering the next generation of founders through hands-on ideation, financial modeling, and pitch execution.
@@ -28,9 +28,9 @@ export const Footer: React.FC = () => {
             <div className="text-[11px] font-mono text-[#F5C518] font-bold mb-3">
               EVENT LOGISTICS
             </div>
-            <div>03 OCTOBER 2026</div>
-            <div>11:00 AM — 6:00 PM IST</div>
-            <div>FR. CONCEICAO RODRIGUES COLLEGE OF ENGINEERING (CRCE), BANDRA, MUMBAI</div>
+            <div>12 OCTOBER 2026</div>
+            <div>4–5 HOURS</div>
+            <div>LOKMANYA TILAK COLLEGE OF ENGINEERING (LTCE), NAVI MUMBAI</div>
           </div>
 
           {/* Right Column: Connect & Back to top */}
@@ -41,22 +41,31 @@ export const Footer: React.FC = () => {
               </div>
               <div className="space-y-2.5">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/ltce_ecell?stkn=dXEzYWJ4d2o0Z3Fn"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-xs uppercase tracking-wider text-white/70 hover:text-[#F5C518] transition-colors"
                 >
                   <Instagram className="w-4 h-4 text-[#F5C518]" />
-                  <span>E-Cell CRCE</span>
+                  <span>E-Cell LTCE</span>
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/iitbombay_ecell/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-xs uppercase tracking-wider text-white/70 hover:text-[#F5C518] transition-colors"
                 >
                   <Instagram className="w-4 h-4 text-[#F5C518]" />
                   <span>E-Cell IIT Bombay</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/ecell-ltce/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-xs uppercase tracking-wider text-white/70 hover:text-[#F5C518] transition-colors"
+                >
+                  <Linkedin className="w-4 h-4 text-[#F5C518]" />
+                  <span>E-Cell LTCE</span>
                 </a>
               </div>
             </div>
@@ -75,7 +84,7 @@ export const Footer: React.FC = () => {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#C5B8D8]/60">
           <div>© 2026 illuminate Workshop. All rights reserved.</div>
           <div className="text-[11px] uppercase tracking-wider">
-            Conducted by E-Cell IIT Bombay · Hosted by E-Cell CRCE
+            Conducted by E-Cell IIT Bombay · Hosted by E-Cell LTCE
           </div>
         </div>
       </div>

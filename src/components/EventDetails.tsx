@@ -59,7 +59,7 @@ export const EventDetails: React.FC<EventDetailsProps> = ({ onOpenRegister }) =>
             <span>ALL-ACCESS WORKSHOP PASS</span>
           </div>
 
-          {/* Huge Price: ₹349 */}
+          {/* Huge Price: ₹700 */}
           <div
             className="font-bebas text-8xl sm:text-9xl md:text-[11rem] text-[#F5C518] leading-[0.85] tracking-tight select-none"
             style={{
@@ -67,7 +67,7 @@ export const EventDetails: React.FC<EventDetailsProps> = ({ onOpenRegister }) =>
                 '0 0 35px rgba(245,197,24,0.5), 0 0 80px rgba(245,197,24,0.25)',
             }}
           >
-            ₹349
+            ₹700
           </div>
 
           {/* Subtitle: PER PARTICIPANT */}
@@ -79,37 +79,39 @@ export const EventDetails: React.FC<EventDetailsProps> = ({ onOpenRegister }) =>
             Includes official certification from E-Cell IIT Bombay, startup kit, mentor guidance, and challenge incentives.
           </p>
 
-          {/* Event Metadata Row: 03 OCTOBER 2026 | 11:00 AM — 6:00 PM | CRCE, BANDRA, MUMBAI */}
+          {/* Event Metadata Row: 12 OCTOBER 2026 | 4–5 HOURS | LTCE, NAVI MUMBAI */}
           <div className="mt-10 sm:mt-12 pt-8 border-t border-white/10 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs sm:text-sm text-white/90">
             <div className="flex items-center gap-2 font-medium">
               <Calendar className="w-4 h-4 text-[#F5C518]" />
-              <span>03 OCTOBER 2026</span>
+              <span>12 OCTOBER 2026</span>
             </div>
 
             <span className="text-white/20 hidden sm:inline">•</span>
 
             <div className="flex items-center gap-2 font-medium">
               <Clock className="w-4 h-4 text-[#F5C518]" />
-              <span>11:00 AM — 6:00 PM</span>
+              <span>4–5 HOURS</span>
             </div>
 
             <span className="text-white/20 hidden sm:inline">•</span>
 
             <div className="flex items-center gap-2 font-medium">
               <MapPin className="w-4 h-4 text-[#F5C518]" />
-              <span>CRCE, BANDRA, MUMBAI</span>
+              <span>LTCE, NAVI MUMBAI</span>
             </div>
           </div>
 
           {/* CTA: REGISTER NOW */}
           <div className="mt-10">
-            <button
-              onClick={onOpenRegister}
+            <a
+              href="https://forms.gle/XJMwB8mSd4GzBn9G7"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 px-9 py-4 rounded-full bg-[#F5C518] hover:bg-[#ffcf24] text-black font-extrabold text-sm uppercase tracking-wider shadow-[0_0_30px_rgba(245,197,24,0.45)] hover:shadow-[0_0_50px_rgba(245,197,24,0.7)] transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer"
             >
               <span>REGISTER NOW</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </button>
+            </a>
           </div>
         </motion.div>
       </div>

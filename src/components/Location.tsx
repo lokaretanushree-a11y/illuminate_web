@@ -17,7 +17,7 @@ export const Location: React.FC = () => {
             Location
           </h2>
           <p className="text-xs sm:text-sm text-zinc-400">
-            Hosted along the scenic Bandstand Promenade in Bandra West, Mumbai.
+            Hosted at Lokmanya Tilak College of Engineering (LTCE), Navi Mumbai.
           </p>
         </div>
 
@@ -43,11 +43,11 @@ export const Location: React.FC = () => {
               <div className="space-y-3 pt-6 border-t border-purple-900/40 text-xs text-zinc-400">
                 <div className="flex items-start gap-2.5">
                   <Compass className="w-4 h-4 text-amber-400/80 shrink-0 mt-0.5" />
-                  <span>Scenic campus location at Bandstand Promenade overlooking the Arabian Sea</span>
+                  <span>LTCE campus located at Sector 4, Vikas Nagar, Koparkhairane</span>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <Navigation className="w-4 h-4 text-amber-400/80 shrink-0 mt-0.5" />
-                  <span>Accessible via Bandra Railway Station (~12-15 mins by auto-rickshaw or taxi)</span>
+                  <span>Accessible via Kopar Khairane / Ghansoli Railway Station (~5-10 mins)</span>
                 </div>
               </div>
 
@@ -68,9 +68,9 @@ export const Location: React.FC = () => {
           {/* Right: Architectural Vector Map Placeholder Card */}
           <div className="lg:col-span-7">
             <div className="relative rounded-3xl bg-[#090314] border border-purple-900/40 p-6 sm:p-8 overflow-hidden group">
-              {/* Decorative Map Grid & Coastline SVG */}
+              {/* Decorative Map Grid & SVG */}
               <div className="relative h-64 sm:h-80 w-full rounded-2xl bg-[#0d051a] overflow-hidden border border-purple-900/30 flex items-center justify-center">
-                {/* SVG Stylized Cartography of Bandstand Coastline */}
+                {/* SVG Stylized Cartography */}
                 <svg
                   className="absolute inset-0 w-full h-full opacity-40 group-hover:opacity-60 transition-opacity duration-700"
                   viewBox="0 0 500 350"
@@ -78,19 +78,16 @@ export const Location: React.FC = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   preserveAspectRatio="xMidYMid slice"
                 >
-                  {/* Water / Arabian Sea */}
                   <path
                     d="M0 0 L180 0 Q190 90 220 180 Q240 260 210 350 L0 350 Z"
                     fill="#15082e"
                   />
-                  {/* Coastal Road - Bandstand Promenade */}
                   <path
                     d="M180 0 Q190 90 220 180 Q240 260 210 350"
                     stroke="#f5b041"
                     strokeWidth="3"
                     strokeDasharray="4 2"
                   />
-                  {/* Urban Street Grids */}
                   <path d="M220 80 L500 60" stroke="#3b1b6d" strokeWidth="1.5" />
                   <path d="M225 140 L500 120" stroke="#3b1b6d" strokeWidth="1.5" />
                   <path d="M230 200 L500 210" stroke="#3b1b6d" strokeWidth="1.5" />
@@ -98,13 +95,12 @@ export const Location: React.FC = () => {
                   <path d="M300 0 L320 350" stroke="#3b1b6d" strokeWidth="1.5" />
                   <path d="M400 0 L410 350" stroke="#3b1b6d" strokeWidth="1.5" />
 
-                  {/* Ocean wave ripples */}
                   <path d="M40 70 Q80 60 120 70" stroke="#4a1e8a" strokeWidth="1" strokeOpacity="0.5" />
                   <path d="M60 140 Q100 130 140 140" stroke="#4a1e8a" strokeWidth="1" strokeOpacity="0.5" />
                   <path d="M30 230 Q70 220 110 230" stroke="#4a1e8a" strokeWidth="1" strokeOpacity="0.5" />
                 </svg>
 
-                {/* Map Pin Marker on Fr. CRCE Bandra */}
+                {/* Map Pin Marker on LTCE Navi Mumbai */}
                 <div className="absolute top-[52%] left-[45%] -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center">
                   <div className="relative flex items-center justify-center">
                     <span className="animate-ping absolute inline-flex h-8 w-8 rounded-full bg-amber-400 opacity-75" />
@@ -113,22 +109,22 @@ export const Location: React.FC = () => {
                     </div>
                   </div>
                   <div className="mt-2 px-3 py-1 rounded-md bg-[#0a0314]/90 border border-amber-400/40 backdrop-blur-md text-[11px] font-bold text-white whitespace-nowrap shadow-xl">
-                    Fr. CRCE Bandra
+                    LTCE, Navi Mumbai
                   </div>
                 </div>
 
                 {/* Overlay card in bottom corner */}
                 <div className="absolute bottom-3 left-3 right-3 sm:right-auto px-3.5 py-2 rounded-xl bg-[#090212]/90 border border-purple-900/50 backdrop-blur-md flex items-center justify-between sm:justify-start gap-4 text-[11px] text-zinc-300">
                   <div>
-                    <span className="text-zinc-500 font-mono">19.0435° N, 72.8196° E</span>
+                    <span className="text-zinc-500 font-mono">19.1026° N, 73.0031° E</span>
                   </div>
-                  <span className="text-amber-400 font-medium">Bandra West</span>
+                  <span className="text-amber-400 font-medium">Navi Mumbai</span>
                 </div>
               </div>
 
               {/* Card Footer */}
               <div className="mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-zinc-400">
-                <span>Fr. Conceicao Rodrigues College of Engineering · Mumbai</span>
+                <span>Lokmanya Tilak College of Engineering (LTCE) · Navi Mumbai</span>
                 <a
                   href={EVENT_CONFIG.venue.googleMapsUrl}
                   target="_blank"

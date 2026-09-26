@@ -17,8 +17,16 @@ export const Benefits: React.FC = () => {
     {
       icon: Package,
       title: 'STARTUP KIT',
-      subtitle: 'Physical Materials & Templates',
-      desc: 'Physical Business Model Canvas worksheets, problem-mapping frameworks, founder workbook, and curated stationery provided on arrival.',
+      subtitle: '',
+      items: [
+        'Business Model Canvas (BMC) sheet/template',
+        'Frameworks for entrepreneurship and startup planning',
+        'Workshop workbook/material',
+        'Startup tools, templates, and resources',
+        'Activity sheets and brainstorming material',
+        'Illuminate goodies/merchandise (stickers, badges, etc.)',
+        'Workshop incentives provided by E-Cell IIT Bombay',
+      ],
     },
     {
       icon: Users,
@@ -68,7 +76,7 @@ export const Benefits: React.FC = () => {
             </h2>
           </div>
           <p className="text-[#C5B8D8] text-xs sm:text-sm max-w-sm uppercase tracking-[0.16em] font-medium">
-            Tangible credentials, physical tools, and ecosystem access included in your ₹349 pass.
+            Tangible credentials, physical tools, and ecosystem access included in your ₹700 pass.
           </p>
         </div>
 
@@ -110,14 +118,30 @@ export const Benefits: React.FC = () => {
                   <h3 className="font-bebas text-2xl sm:text-3xl text-white tracking-wide group-hover:text-[#F5C518] transition-colors">
                     {benefit.title}
                   </h3>
-                  <div className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-[#F5C518]/80 mt-1 mb-4">
-                    {benefit.subtitle}
-                  </div>
+                  {benefit.subtitle && (
+                    <div className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-[#F5C518]/80 mt-1 mb-4">
+                      {benefit.subtitle}
+                    </div>
+                  )}
 
                   {/* Description */}
-                  <p className="text-[#C5B8D8] text-sm sm:text-base leading-relaxed font-normal">
-                    {benefit.desc}
-                  </p>
+                  {benefit.desc && (
+                    <p className="text-[#C5B8D8] text-sm sm:text-base leading-relaxed font-normal">
+                      {benefit.desc}
+                    </p>
+                  )}
+
+                  {/* Bullet List for Startup Kit */}
+                  {benefit.items && (
+                    <ul className="space-y-2 sm:space-y-2.5 mt-3 text-[#C5B8D8] text-xs sm:text-sm leading-relaxed font-normal">
+                      {benefit.items.map((item, i) => (
+                        <li key={i} className="flex items-start gap-2.5">
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#F5C518] mt-1.5 shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
 
                 <div className="mt-8 pt-4 border-t border-white/5 flex items-center justify-between">

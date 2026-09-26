@@ -16,7 +16,7 @@ export const WorkshopJourney: React.FC = () => {
       time: "11:00 AM",
       phase: "Phase 1 · Foundations",
       title: "Introduction",
-      description: "Welcome address, workshop orientation, and setting the stage with leaders from E-Cell IIT Bombay and E-Cell CRCE.",
+      description: "Welcome address, workshop orientation, and setting the stage with leaders from E-Cell IIT Bombay and E-Cell LTCE.",
     },
     {
       step: "02",
@@ -85,7 +85,7 @@ export const WorkshopJourney: React.FC = () => {
             Workshop Journey
           </h2>
           <p className="text-xs sm:text-sm text-zinc-400 max-w-xl">
-            A comprehensive 7-hour roadmap engineered to take you from a raw premise to an investor-ready pitch outline.
+            A comprehensive 4–5 hour roadmap engineered to take you from a raw premise to an investor-ready pitch outline.
           </p>
         </div>
 

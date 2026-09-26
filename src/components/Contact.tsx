@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'motion/react';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, Phone } from 'lucide-react';
 import { FloatingObjects } from './FloatingObjects';
 
 export const Contact: React.FC = () => {
@@ -8,8 +8,16 @@ export const Contact: React.FC = () => {
   const isInView = useInView(ref, { once: true, margin: '-60px' });
 
   const contacts = [
-    { name: 'PARI TIWARI' },
-    { name: 'AWASTHI RAGHWENDRA' },
+    {
+      name: 'PARI TIWARI',
+      phone: '+91 95801 96336',
+      tel: '+919580196336',
+    },
+    {
+      name: 'AWASTHI RAGHWENDRA',
+      phone: '+91 88791 82418',
+      tel: '+918879182418',
+    },
   ];
 
   return (
@@ -94,6 +102,15 @@ export const Contact: React.FC = () => {
                 <Sparkles className="w-3 h-3 text-[#F5C518]" />
                 <span>E-CELL LEADERSHIP</span>
               </div>
+
+              {/* Phone Number */}
+              <a
+                href={`tel:${person.tel}`}
+                className="mt-4 inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-[#C5B8D8] hover:text-[#F5C518] transition-colors py-1.5 px-3.5 rounded-full bg-white/[0.04] border border-white/10 hover:border-[#F5C518]/50 group/phone"
+              >
+                <Phone className="w-3.5 h-3.5 text-[#F5C518] group-hover/phone:scale-110 transition-transform" />
+                <span className="tracking-wider">{person.phone}</span>
+              </a>
             </motion.div>
           ))}
         </div>
@@ -106,7 +123,7 @@ export const Contact: React.FC = () => {
           className="flex items-center justify-center gap-4 sm:gap-8 flex-wrap mt-14"
         >
           <div className="px-5 py-2.5 rounded-full border border-white/10 bg-white/[0.02] text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-white/60">
-            E-CELL CRCE
+            E-CELL LTCE
           </div>
 
           <span className="text-sm font-bebas text-[#F5C518]">×</span>

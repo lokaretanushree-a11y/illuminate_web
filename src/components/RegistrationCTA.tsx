@@ -44,13 +44,15 @@ export const RegistrationCTA: React.FC<RegistrationCTAProps> = ({ onOpenRegister
 
           {/* Large CTA Button */}
           <div className="flex justify-center mb-10">
-            <button
-              onClick={onOpenRegister}
+            <a
+              href="https://forms.gle/XJMwB8mSd4GzBn9G7"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto min-h-[54px] px-10 py-4 rounded-full text-sm sm:text-base font-bold tracking-wider uppercase text-black bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:brightness-110 active:scale-[0.98] transition-all gold-glow cursor-pointer shadow-xl shadow-amber-500/25 flex items-center justify-center gap-3"
             >
               <span>REGISTER NOW</span>
               <ArrowRight className="w-4 h-4 text-black stroke-[2.5]" />
-            </button>
+            </a>
           </div>
 
           {/* Zero-Pill Feature Checklist */}

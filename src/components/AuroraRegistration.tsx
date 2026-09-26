@@ -267,11 +267,11 @@ export const AuroraRegistration: React.FC<AuroraRegistrationProps> = ({
                 </div>
                 <div className="flex justify-between text-white/70">
                   <span>Date &amp; Venue</span>
-                  <span className="text-white font-medium">03 Oct 2026 · CRCE Bandra</span>
+                  <span className="text-white font-medium">12 Oct 2026 · LTCE Navi Mumbai</span>
                 </div>
                 <div className="flex justify-between text-white/70">
                   <span>Pass Type</span>
-                  <span className="text-emerald-400 font-medium">All-Access Pass (₹349)</span>
+                  <span className="text-emerald-400 font-medium">All-Access Pass (₹700)</span>
                 </div>
               </div>
 

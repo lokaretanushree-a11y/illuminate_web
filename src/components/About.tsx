@@ -56,7 +56,7 @@ export const About: React.FC = () => {
             </h2>
 
             <div className="mt-6 hidden lg:block text-xs uppercase tracking-[0.25em] text-[#C5B8D8]/60 font-semibold">
-              E-CELL IIT BOMBAY × E-CELL CRCE
+              E-CELL IIT BOMBAY × E-CELL LTCE
             </div>
           </motion.div>
 
@@ -72,7 +72,7 @@ export const About: React.FC = () => {
               <p>
                 <span className="text-white font-medium">illuminate</span> is a one-day, hands-on entrepreneurship workshop conducted by{' '}
                 <span className="text-white font-semibold">E-Cell IIT Bombay</span> and hosted by{' '}
-                <span className="text-white font-semibold">E-Cell CRCE</span>, bringing together students, aspiring founders, and innovators to turn raw ideas into scalable ventures.
+                <span className="text-white font-semibold">E-Cell LTCE</span>, bringing together students, aspiring founders, and innovators to turn raw ideas into scalable ventures.
               </p>
               <p className="text-sm sm:text-base text-[#C5B8D8]/80 leading-relaxed">
                 Through immersive problem discovery, Business Model Canvas construction, startup finance fundamentals, MVP prototyping, and live pitch execution, you master the playbook of India&apos;s leading entrepreneurial ecosystem.

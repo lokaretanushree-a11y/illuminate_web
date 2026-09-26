@@ -198,7 +198,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onLearnMore }) => {
           className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/90 text-[10px] sm:text-xs uppercase tracking-[0.2em] font-medium shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
         >
           <Sparkles className="w-3 h-3 text-[#FFD21C]" />
-          <span>E-CELL CRCE × E-CELL IIT BOMBAY</span>
+          <span>E-CELL LTCE × E-CELL IIT BOMBAY</span>
         </motion.div>
 
         {/* Minimal Navigation */}
@@ -227,13 +227,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onLearnMore }) => {
           >
             SCHEDULE
           </button>
-          <button
-            onClick={onOpenRegister}
+          <a
+            href="https://forms.gle/XJMwB8mSd4GzBn9G7"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-[#FFD21C] hover:text-white transition-colors cursor-pointer flex items-center gap-1 font-bold"
           >
             <span>REGISTER</span>
-            <span className="text-[10px] opacity-75">₹349</span>
-          </button>
+            <span className="text-[10px] opacity-75">₹700</span>
+          </a>
         </motion.nav>
       </header>
 
@@ -390,21 +392,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onLearnMore }) => {
         >
           <div className="flex items-center gap-2 font-medium">
             <Calendar className="w-3.5 h-3.5 text-[#FFD21C]" />
-            <span>03 OCTOBER 2026</span>
+            <span>12 OCTOBER 2026</span>
           </div>
 
           <span className="text-white/25 hidden sm:inline">|</span>
 
           <div className="flex items-center gap-2 font-medium">
             <Clock className="w-3.5 h-3.5 text-[#FFD21C]" />
-            <span>11:00 AM — 6:00 PM</span>
+            <span>4–5 HOURS</span>
           </div>
 
           <span className="text-white/25 hidden sm:inline">|</span>
 
           <div className="flex items-center gap-2 font-medium">
             <MapPin className="w-3.5 h-3.5 text-[#FFD21C]" />
-            <span>CRCE, BANDRA</span>
+            <span>LTCE, NAVI MUMBAI</span>
           </div>
         </motion.div>
 
@@ -416,17 +418,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onLearnMore }) => {
           className="flex flex-wrap items-center gap-3.5 sm:gap-4 mt-6 sm:mt-8 pl-0.5"
         >
           {/* Primary CTA */}
-          <motion.button
+          <motion.a
+            href="https://forms.gle/XJMwB8mSd4GzBn9G7"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={shouldReduceMotion ? {} : { scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            onClick={onOpenRegister}
             className="group relative px-7 sm:px-8 py-3.5 sm:py-4 rounded-full bg-[#FFD21C] hover:bg-[#ffe066] text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider flex items-center gap-2.5 shadow-[0_0_25px_rgba(255,210,28,0.45)] hover:shadow-[0_0_42px_rgba(255,210,28,0.75)] transition-all duration-300 cursor-pointer"
           >
             <span>REGISTER NOW</span>
             <span className="w-1.5 h-1.5 rounded-full bg-black/40" />
-            <span className="font-black">₹349</span>
+            <span className="font-black">₹700</span>
             <ArrowRight className="w-4 h-4 ml-0.5 transition-transform duration-300 group-hover:translate-x-[5px]" />
-          </motion.button>
+          </motion.a>
 
           {/* Secondary CTA */}
           <motion.button
@@ -451,7 +455,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onLearnMore }) => {
         >
           <span>E-CELL IIT BOMBAY</span>
           <span className="mx-2 text-[#FFD21C]">×</span>
-          <span>E-CELL CRCE</span>
+          <span>E-CELL LTCE</span>
         </motion.div>
 
         <motion.button

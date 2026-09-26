@@ -151,7 +151,7 @@ export const RegistrationSteps: React.FC<RegistrationStepsProps> = ({ onOpenRegi
                   PAYMENT
                 </div>
                 <p className="text-[#C5B8D8] text-xs sm:text-sm leading-relaxed">
-                  Scan the QR code and complete the ₹349 payment.
+                  Scan the QR code and complete the ₹700 payment.
                 </p>
               </div>
 
@@ -177,19 +177,20 @@ export const RegistrationSteps: React.FC<RegistrationStepsProps> = ({ onOpenRegi
                 </div>
                 <div className="flex items-baseline gap-2">
                   <span className="font-bebas text-4xl sm:text-5xl text-[#F5C518] leading-none">
-                    ₹349
+                    ₹700
                   </span>
                   <span className="text-xs text-[#C5B8D8]">/ participant</span>
                 </div>
               </div>
 
-              <button
-                type="button"
-                onClick={onOpenRegister}
+              <a
+                href="https://forms.gle/XJMwB8mSd4GzBn9G7"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto px-8 sm:px-10 py-4 rounded-full bg-[#F5C518] hover:bg-[#ffcf24] text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2.5 transition-all duration-300 shadow-[0_0_25px_rgba(245,197,24,0.4)] hover:shadow-[0_0_40px_rgba(245,197,24,0.65)] hover:scale-105 active:scale-95 cursor-pointer"
               >
                 <span>REGISTER NOW →</span>
-              </button>
+              </a>
             </div>
 
             {/* Subtle verification footnote */}

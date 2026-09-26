@@ -453,7 +453,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
                     </label>
                     <input
                       type="text"
-                      placeholder="e.g. Fr. CRCE, Bandra"
+                      placeholder="e.g. LTCE, Navi Mumbai"
                       value={formData.college}
                       disabled={isSaving}
                       onChange={(e) => handleInputChange('college', e.target.value)}
@@ -520,7 +520,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
                       </div>
                       <div className="text-right">
                         <div className="font-bebas text-2xl text-[#FFD21C] leading-none">
-                          ₹349
+                          ₹700
                         </div>
                       </div>
                     </div>
@@ -567,7 +567,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
                     <div className="text-[10px] text-white/40">Illuminate All-Access Pass</div>
                   </div>
                   <div className="font-bebas text-3xl text-[#FFD21C] leading-none">
-                    ₹349
+                    ₹700
                   </div>
                 </div>
 
@@ -576,7 +576,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
                   <div className="inline-block p-4 sm:p-5 rounded-2xl bg-white shadow-[0_15px_40px_rgba(0,0,0,0.5)] border border-white/20 my-2">
                     <img
                       src="/assets/payment-qr.png"
-                      alt="Scan UPI QR Code to pay ₹349"
+                      alt="Scan UPI QR Code to pay ₹700"
                       className="w-48 h-48 sm:w-56 sm:h-56 object-contain rounded-lg mx-auto"
                       onError={() => setHasQrImage(false)}
                     />
@@ -615,7 +615,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
 
                 {/* Instructions */}
                 <p className="text-xs sm:text-sm text-white/90 max-w-sm mx-auto leading-relaxed mt-2 font-medium">
-                  Scan the QR code using any UPI app to pay ₹349.
+                  Scan the QR code using any UPI app to pay ₹700.
                 </p>
                 <p className="text-[11px] sm:text-xs text-[#C5B8D8]/70 max-w-sm mx-auto leading-relaxed mt-1 mb-5">
                   After payment, enter your UPI transaction/reference ID.
@@ -723,7 +723,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
 
                   <div className="flex justify-between items-center">
                     <span className="text-white/60">Fee Amount:</span>
-                    <span className="text-[#FFD21C] font-bold font-bebas text-lg leading-none">₹349</span>
+                    <span className="text-[#FFD21C] font-bold font-bebas text-lg leading-none">₹700</span>
                   </div>
                 </div>
 
