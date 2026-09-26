@@ -1,0 +1,136 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --bg-primary: #05030A;
+  --bg-secondary: #0B0615;
+  --bg-tertiary: #130A22;
+  --bg-deep: #1A0D2E;
+  --accent-gold: #FFD21C;
+  --accent-purple: #9B5CFF;
+  --accent-violet: #7C3AED;
+  --text-primary: #FFFFFF;
+  --text-muted: #D8D2E2;
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --color-brand-gray: #1A1A1A;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Bebas Neue", sans-serif;
+  --color-brand-gray: #1A1A1A;
+  --color-gold: #FFD21C;
+  --color-purple-primary: #9B5CFF;
+  --color-purple-violet: #7C3AED;
+  --color-dark-primary: #05030A;
+  --color-dark-secondary: #0B0615;
+  --color-dark-tertiary: #130A22;
+  --color-dark-deep: #1A0D2E;
+  --color-muted: #D8D2E2;
+}
+
+body {
+  @apply font-sans bg-[#05030A] text-white antialiased;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  selection-background-color: #FFD21C;
+  selection-color: #000000;
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Animated metallic gold text shimmer for ILLUMINATE */
+@keyframes goldShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.text-gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    #FFF0A3 0%,
+    #FFD21C 22%,
+    #F5B800 45%,
+    #FFF0A3 58%,
+    #FFD94A 74%,
+    #FFD21C 88%,
+    #FFF0A3 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: goldShimmer 8s linear infinite;
+}
+
+/* Gold typography glows */
+.gold-text-glow {
+  text-shadow: 0 0 40px rgba(245, 197, 24, 0.8),
+               0 0 80px rgba(245, 197, 24, 0.6),
+               0 0 160px rgba(245, 197, 24, 0.3);
+}
+
+.gold-glow {
+  box-shadow: 0 0 35px rgba(245, 197, 24, 0.35);
+}
+
+.gold-glow-sm {
+  box-shadow: 0 0 20px rgba(245, 197, 24, 0.25);
+}
+
+.purple-glow {
+  box-shadow: 0 0 40px rgba(168, 85, 247, 0.35);
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(245, 197, 24, 0.3);
+  box-shadow: 0 0 30px rgba(245, 197, 24, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Subtle animated space noise overlay */
+.space-noise {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
+  background-size: 32px 32px;
+  opacity: 0.06;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0515;
+}
+::-webkit-scrollbar-thumb {
+  background: #2E154E;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5E0ED7;
+}

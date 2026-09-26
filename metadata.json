@@ -1,0 +1,8 @@
+{
+  "name": "Remix illuminate-workshop",
+  "description": "Premier entrepreneurship workshop by E-Cell IIT Bombay × E-Cell LTCE. Build, validate, pitch, and illuminate your startup idea.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
