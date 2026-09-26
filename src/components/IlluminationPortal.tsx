@@ -431,7 +431,7 @@ export const IlluminationPortal: React.FC<IlluminationPortalProps> = ({
   return (
     <aside
       aria-hidden="true"
-      className="absolute right-0 top-0 bottom-0 w-full md:w-[48%] lg:w-[45%] pointer-events-none z-[4] overflow-hidden select-none flex items-center justify-center"
+      className="hero-portal-aside absolute right-0 top-0 bottom-0 w-full md:w-[48%] lg:w-[45%] pointer-events-none z-[4] overflow-hidden select-none flex items-center justify-center"
     >
       {/* 
         ========================================================================

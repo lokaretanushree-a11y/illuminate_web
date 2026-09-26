@@ -80,20 +80,20 @@ export const EventDetails: React.FC<EventDetailsProps> = ({ onOpenRegister }) =>
           </p>
 
           {/* Event Metadata Row: 12 OCTOBER 2026 | 4–5 HOURS | LTCE, NAVI MUMBAI */}
-          <div className="mt-10 sm:mt-12 pt-8 border-t border-white/10 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs sm:text-sm text-white/90">
+          <div className="event-meta-bar mt-10 sm:mt-12 pt-8 border-t border-white/10 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs sm:text-sm text-white/90">
             <div className="flex items-center gap-2 font-medium">
               <Calendar className="w-4 h-4 text-[#F5C518]" />
               <span>12 OCTOBER 2026</span>
             </div>
 
-            <span className="text-white/20 hidden sm:inline">•</span>
+            <span className="meta-divider text-white/20 hidden sm:inline">•</span>
 
             <div className="flex items-center gap-2 font-medium">
               <Clock className="w-4 h-4 text-[#F5C518]" />
               <span>4–5 HOURS</span>
             </div>
 
-            <span className="text-white/20 hidden sm:inline">•</span>
+            <span className="meta-divider text-white/20 hidden sm:inline">•</span>
 
             <div className="flex items-center gap-2 font-medium">
               <MapPin className="w-4 h-4 text-[#F5C518]" />

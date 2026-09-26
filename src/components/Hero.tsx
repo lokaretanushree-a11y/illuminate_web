@@ -115,7 +115,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onLearnMore }) => {
   return (
     <section
       ref={heroRef}
-      className="relative w-full min-h-screen lg:h-screen flex flex-col justify-between overflow-hidden px-4 sm:px-8 md:px-12 lg:px-16 pt-5 pb-6 sm:pb-8 select-none bg-[#05030A]"
+      className="hero-main-section relative w-full min-h-screen lg:h-screen flex flex-col justify-between overflow-hidden px-4 sm:px-8 md:px-12 lg:px-16 pt-5 pb-6 sm:pb-8 select-none bg-[#05030A]"
     >
       {/* 
         BACKGROUND VIDEO:
@@ -171,7 +171,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onLearnMore }) => {
           x: shouldReduceMotion ? 0 : bgGlowMouseX,
           y: shouldReduceMotion ? 0 : bgGlowMouseY,
         }}
-        className="absolute top-1/3 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[580px] h-[400px] rounded-full bg-[#FFD21C]/[0.12] blur-[110px] pointer-events-none z-[2]"
+        className="hero-yellow-ambient absolute top-1/3 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[580px] h-[400px] rounded-full bg-[#FFD21C]/[0.12] blur-[110px] pointer-events-none z-[2]"
       />
 
       {/* Deep violet atmospheric baseline glow */}
@@ -243,7 +243,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onLearnMore }) => {
         MAIN HERO CONTENT:
         Left 55% with ample negative space before the 3D Illumination Portal on the right
       */}
-      <div className="relative z-10 w-full max-w-3xl lg:max-w-[55%] my-auto py-6 sm:py-8 lg:py-10 text-left">
+      <div className="hero-content-container relative z-10 w-full max-w-3xl lg:max-w-[55%] my-auto py-6 sm:py-8 lg:py-10 text-left">
         {/* Editorial Event Label */}
         <div className="flex items-center gap-2.5 mb-2.5 sm:mb-3.5">
           <motion.span
@@ -304,7 +304,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onLearnMore }) => {
               textShadow:
                 '0 0 35px rgba(255, 210, 28, 0.38), 0 0 75px rgba(255, 210, 28, 0.18)',
             }}
-            className="font-bebas leading-[0.86] tracking-[0.01em] select-none inline-flex origin-left text-gold-shimmer"
+            className="hero-title font-bebas leading-[0.86] tracking-[0.01em] select-none inline-flex origin-left text-gold-shimmer"
             aria-label="ILLUMINATE"
           >
             {TITLE_LETTERS.map((char, index) => (
@@ -388,21 +388,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onLearnMore }) => {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.1 }}
-          className="mt-6 sm:mt-7 inline-flex flex-wrap items-center gap-2.5 sm:gap-4 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-black/40 backdrop-blur-md border border-white/15 text-white/90 text-xs sm:text-sm tracking-wide shadow-[0_4px_24px_rgba(0,0,0,0.4)]"
+          className="hero-meta-bar mt-6 sm:mt-7 inline-flex flex-wrap items-center gap-2.5 sm:gap-4 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-black/40 backdrop-blur-md border border-white/15 text-white/90 text-xs sm:text-sm tracking-wide shadow-[0_4px_24px_rgba(0,0,0,0.4)]"
         >
           <div className="flex items-center gap-2 font-medium">
             <Calendar className="w-3.5 h-3.5 text-[#FFD21C]" />
             <span>12 OCTOBER 2026</span>
           </div>
 
-          <span className="text-white/25 hidden sm:inline">|</span>
+          <span className="meta-divider text-white/25 hidden sm:inline">|</span>
 
           <div className="flex items-center gap-2 font-medium">
             <Clock className="w-3.5 h-3.5 text-[#FFD21C]" />
             <span>4–5 HOURS</span>
           </div>
 
-          <span className="text-white/25 hidden sm:inline">|</span>
+          <span className="meta-divider text-white/25 hidden sm:inline">|</span>
 
           <div className="flex items-center gap-2 font-medium">
             <MapPin className="w-3.5 h-3.5 text-[#FFD21C]" />
@@ -424,7 +424,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister, onLearnMore }) => {
             rel="noopener noreferrer"
             whileHover={shouldReduceMotion ? {} : { scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            className="group relative px-7 sm:px-8 py-3.5 sm:py-4 rounded-full bg-[#FFD21C] hover:bg-[#ffe066] text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider flex items-center gap-2.5 shadow-[0_0_25px_rgba(255,210,28,0.45)] hover:shadow-[0_0_42px_rgba(255,210,28,0.75)] transition-all duration-300 cursor-pointer"
+            className="hero-inline-register-btn group relative px-7 sm:px-8 py-3.5 sm:py-4 rounded-full bg-[#FFD21C] hover:bg-[#ffe066] text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider flex items-center gap-2.5 shadow-[0_0_25px_rgba(255,210,28,0.45)] hover:shadow-[0_0_42px_rgba(255,210,28,0.75)] transition-all duration-300 cursor-pointer"
           >
             <span>REGISTER NOW</span>
             <span className="w-1.5 h-1.5 rounded-full bg-black/40" />

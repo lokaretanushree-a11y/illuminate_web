@@ -134,3 +134,69 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #5E0ED7;
 }
+
+/* ==========================================================================
+   MOBILE LAYOUT FIXES (Screens under 650px only)
+   Preserves desktop design intact while perfecting mobile layout
+   ========================================================================== */
+@media (max-width: 650px) {
+  /* 1. Remove duplicate Register button: hide inline button, keep sticky bottom bar */
+  .hero-inline-register-btn {
+    display: none !important;
+  }
+
+  /* 2. Fix background clutter: reposition/scale down background graphics and add dark translucent overlay */
+  .hero-content-container {
+    background: rgba(5, 3, 10, 0.65) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-radius: 1.25rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    padding: 1.25rem !important;
+  }
+
+  .hero-portal-aside {
+    opacity: 0.28 !important;
+    transform: scale(0.7) translateY(18%) !important;
+    transform-origin: center bottom !important;
+  }
+
+  .hero-yellow-ambient {
+    opacity: 0.04 !important;
+  }
+
+  /* 3. Stack meta details vertically: date, duration, venue */
+  .hero-meta-bar {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.5rem !important;
+    border-radius: 1rem !important;
+    padding: 0.75rem 1.125rem !important;
+    width: 100% !important;
+  }
+
+  .event-meta-bar {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    width: 100% !important;
+  }
+
+  .meta-divider {
+    display: none !important;
+  }
+
+  /* 4. Fix spacing and typography: reduce ILLUMINATE header, increase horizontal container padding */
+  .hero-main-section {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .hero-title {
+    font-size: clamp(3.2rem, 13vw, 4.4rem) !important;
+    line-height: 0.9 !important;
+  }
+}
+
